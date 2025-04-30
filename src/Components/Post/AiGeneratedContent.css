@@ -1,0 +1,89 @@
+.ai-content-container {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #f0f7ff;
+  border: 1px solid #d0e3ff;
+  transition: all 0.3s ease;
+}
+
+.ai-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ai-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #0366d6;
+  background-color: #e1f0ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.ai-badge svg {
+  color: #0366d6;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #0366d6;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e1f0ff;
+}
+
+.ai-content {
+  overflow: hidden;
+}
+
+.ai-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #0366d6;
+}
+
+.ai-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.ai-content-container.collapsed .ai-content {
+  max-height: 100px;
+}
+
+.ai-content-container.expanded .ai-content {
+  max-height: none;
+}
+
+@media (max-width: 768px) {
+  .ai-content-container {
+    padding: 10px;
+  }
+  
+  .ai-badge {
+    font-size: 11px;
+  }
+  
+  .ai-title {
+    font-size: 13px;
+  }
+  
+  .ai-description {
+    font-size: 13px;
+  }
+} 

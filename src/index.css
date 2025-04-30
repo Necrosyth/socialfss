@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    }
+.App{
+    width: 100vw;
+}
+
+/* Add these new color scheme updates */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #3b82f6;
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  --gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  --bg-light: #000000;
+  --text-primary: #050608;
+  --text-secondary: #000000;
+}
+
+/* Update button and interactive elements */
+button:focus, input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+a:active, button:active {
+  color: var(--primary-dark);
+}
+
+.active-link, .active-nav-item {
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+/* Update link styles */
+a {
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+/* Update button styles */
+button, .share, .share-btn, [class*="share"] {
+  background: var(--gradient-primary) !important;
+  border: none;
+  transition: all 0.3s ease !important;
+}
+
+button:hover, .share:hover, .share-btn:hover, [class*="share"]:hover {
+  background: var(--gradient-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Follow/Dismiss button styles */
+button.follow, button.dismiss, .follow-btn, .dismiss-btn {
+  background: var(--gradient-primary) !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.3s ease !important;
+}
+
+button.follow:hover, button.dismiss:hover, .follow-btn:hover, .dismiss-btn:hover {
+  background: var(--gradient-hover) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(27, 48, 94, 0.2);
+}
+
+/* For the "Home" active navigation in the sidebar */
+a.active, .active, [class*="active"], #L-box.active {
+    background: linear-gradient(107deg, #3498db 11.1%, #2980b9 95.3%) !important;
+    color: #000000;
+}
+
+#L-box:hover {
+    color:black !important;
+	background-color: #3498db !important;
+    transition: .4s;
+    cursor: pointer;
+    color: #fff !important;
+
+}
+#L-box{
+	color:black;
+}
+
+/* Add these to target the orange buttons in your UI */
+button[type="button"], .MuiButton-root {
+    background-color: #3498db !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+button[type="button"]:hover, .MuiButton-root:hover {
+    background-color: #2980b9 !important;
+}
+
+.L-features > div#L-box > span{
+  color: black;
+}
+

@@ -1,0 +1,19 @@
+.info-follow button{
+    position: absolute;
+    top: 250px;
+    right: 10px;
+    padding: 8px 13px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    gap: 8px;
+    background-color: #dedede;
+}
+.info-follow button:hover{
+    border: none;
+    background: linear-gradient(107deg, #3498db 11.1%, #2980b9 95.3%);
+    color: #fff;
+    transition: .3s;
+}
